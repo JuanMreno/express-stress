@@ -3,7 +3,7 @@ const { spawn } = require("child_process");
 const { rejects } = require('assert');
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 app.get('/cpu/:time', (req, res) => {
     res.send('Hello World!' + req.params.time);
